@@ -80,7 +80,7 @@ Settings → Variables → Add variable
 ```js
 const CONFIG = {
   DEFAULT_PASSWORD: "admin",   // 仅用于测试,会被环境变量AUTH_PASSWORD覆盖，只需设置这一个环境变量
-  COOKIE_NAME: "nav_auth_session",
+  COOKIE_NAME: "wall_auth_session",
   COOKIE_VAL: "valid_token_90days",
   MAX_AGE: 7776000, // 90 天
 };
