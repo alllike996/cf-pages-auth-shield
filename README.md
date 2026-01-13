@@ -71,7 +71,7 @@ Settings → Variables → Add variable
 
 ### 3️⃣ 绑定到 Pages 域名
 
-将该 Worker 绑定到你的 Pages 域名或自定义域名，使其成为访问入口。
+将该 Worker 绑定到你的 Pages 域名或自定义域名，在worker添加路由域名，格式为pages.example.com/*,/*表示这个域名下的所有子入口，使其成为访问入口。
 
 ---
 
@@ -86,8 +86,12 @@ const CONFIG = {
 };
 
 ```
-## 配置项	说明
-DEFAULT_PASSWORD	兜底密码（不建议生产使用）
-COOKIE_NAME	登录标记 Cookie 名
-COOKIE_VAL	Cookie 校验值
-MAX_AGE	登录有效期（秒）
+## 配置项说明
+
+| 配置项 | 说明 |
+|------|------|
+| DEFAULT_PASSWORD | 兜底密码（不建议生产使用） |
+| COOKIE_NAME | 登录标记 Cookie 名 |
+| COOKIE_VAL | Cookie 校验值 |
+| MAX_AGE | 登录有效期（秒） |
+
